@@ -163,7 +163,7 @@ display: block; margin: 0 auto;
 .cerrar:hover {
   color: black;
 
-    
+}
 .contenedor-imagenes {
     display: grid;
     grid-template-columns: 3fr 3fr; /* Dos columnas iguales */
@@ -200,4 +200,5 @@ display: block; margin: 0 auto;
     justify-content: center;
 }
 
-}
+
+
