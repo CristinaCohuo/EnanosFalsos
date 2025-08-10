@@ -162,4 +162,42 @@ display: block; margin: 0 auto;
 }
 .cerrar:hover {
   color: black;
+
+    
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: 3fr 3fr; /* Dos columnas iguales */
+    gap: 2px; /* Espacio entre imágenes */
+    align-items: center; /* Centrar verticalmente */
+    justify-items: center; /* Centrar horizontalmente */
+    padding: 10px;
+}
+
+.contenedor-imagenes img {
+    width: 80%; /* Que ocupen todo el ancho de su columna */
+    max-width: 440px; /* Limitar tamaño máximo */
+    height: auto; /* Mantener proporción */
+    border-radius: 10px; /* Esquinas redondeadas */
+    object-fit: cover; /* Recorte limpio si las proporciones no coinciden */
+}
+
+/* Ajuste en pantallas pequeñas: ponerlas una debajo de la otra */
+@media (max-width: 768px) {
+    .contenedor-imagenes {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+}
+
+
+.boton {
+    padding: 10px 20px;
+    background-color: #13866f;
+    color: white;
+    border: 1px solid #e24000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+}
+
 }
